@@ -1,9 +1,11 @@
 <template name="parkingLot">
   <div class="list-group-item parking-lot">
     <div class="row-action-primary">
-      <i class="material-icons parking-lot__icon {{#unless isFree}} parking-lot__icon--premium {{/unless}}">
-        {{#if isFree}}local_parking{{else}}directions_car{{/if}}
-      </i>
+      {{#if isFree}}
+         <i class="material-icons parking-lot__icon"><span class="glyphicon glyphicon-flag"></span></i>
+      {{else}}
+        <i class="material-icons parking-lot__icon parking-lot__icon--premium"><span class="glyphicon glyphicon-check"></span></i>
+      {{/if}}
     </div>
     <div class="row-content">
       <div class="least-content">{{name}}</div>
