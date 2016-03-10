@@ -16,6 +16,8 @@
             {{#if info.isPremium}}
               <span class="parking-lot__license parking-lot__license--premium">{{info.license}}</span>
               <span class="parking-lot__star glyphicon glyphicon-star"></span>
+            {{else}}
+              <span class="parking-lot__license">{{info.license}}</span>
             {{/if}}
           {{/if}}
         </h4>
