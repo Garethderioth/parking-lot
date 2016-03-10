@@ -1,0 +1,13 @@
+<template name="parkingLots">
+  <div class="container-fluid">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="list-group">
+          {{#each parkingLots}}
+            {{>parkingLot}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

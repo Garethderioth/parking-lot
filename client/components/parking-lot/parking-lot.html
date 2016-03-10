@@ -1,0 +1,38 @@
+<template name="parkingLot">
+  <div class="list-group-item parking-lot">
+    <div class="row-action-primary">
+      <i class="material-icons">
+        {{#if isFree}} local_parking {{else}} directions_car {{/if}}
+      </i>
+    </div>
+    <div class="row-content">
+      <div class="least-content">{{name}}</div>
+        <h4 class="list-group-item-heading">
+          {{#if isFree}}
+            It's Free!
+          {{else}}
+            {{#if info.isPremium}}
+              <span class="parking-lot__license parking-lot__license--premium">{{info.license}}</span>
+              <i class="material-icons parking-lot__star">star</i>
+            {{else}}
+              <span class="parking-lot__license">{{info.license}}</span>
+            {{/if}}
+          {{/if}}
+        </h4>
+      {{#if isMe}}
+        <a href="#" class="btn btn-raised btn-danger">Leave it</a>
+      {{else}}
+        {{#if info.isPremium}}
+          <p class="list-group-item-text">{{info.username}}</p>
+        {{else}}
+          {{#if isFreeOrImPremium}}
+            <a href="#" class="btn btn-raised btn-primary">Take it</a>
+          {{else}}
+            <p class="list-group-item-text">{{info.username}}</p>
+          {{/if}}
+        {{/if}}
+      {{/if}}
+    </div>
+  </div>
+  <div class="list-group-separator"></div>
+</template>
