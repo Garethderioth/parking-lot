@@ -1,12 +1,19 @@
+Template.parkingLot.onCreated(function() {
+  this.iAmPremium = new ReactiveVar(false);
+
+  Meteor.call('users.isPremium', (err, isPremium) => {
+    if (!err) {
+      this.iAmPremium.set(isPremium);
+    }
+  });
+});
+
 Template.parkingLot.helpers({
   isCurrentUser() {
     return Meteor.userId() && Meteor.userId() === this.userId;
   },
   isFreeOrImPremium() {
-    const isFree = this.isFree;
-    const iAmPremium = Meteor.call('users.isPremium');
-
-    return isFree || iAmPremium;
+    return Template.instance().iAmPremium.get() || this.isFree;
   }
 })
 
