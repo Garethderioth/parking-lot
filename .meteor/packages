@@ -28,3 +28,5 @@ insecure
 useraccounts:bootstrap
 check
 reactive-var
+crosswalk
+fastclick
