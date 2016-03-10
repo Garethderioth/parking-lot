@@ -7,6 +7,15 @@
   font-size: 40px;
 }
 
+.list-group .list-group-item .row-picture i.parking-lot__icon--premium,
+.list-group .list-group-item .row-action-primary i.parking-lot__icon--premium {
+  background: $persianGreen;
+}
+
 .list-group .list-group-separator:before {
   width: 100%;
+}
+
+.list-group .list-group-item .row-content {
+  min-height: 100px;
 }

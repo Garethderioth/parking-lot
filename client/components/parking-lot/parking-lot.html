@@ -1,7 +1,7 @@
 <template name="parkingLot">
   <div class="list-group-item parking-lot">
     <div class="row-action-primary">
-      <i class="material-icons">
+      <i class="material-icons parking-lot__icon {{#unless isFree}} parking-lot__icon--premium {{/unless}}">
         {{#if isFree}} local_parking {{else}} directions_car {{/if}}
       </i>
     </div>
@@ -26,7 +26,11 @@
           <p class="list-group-item-text">{{info.username}}</p>
         {{else}}
           {{#if isFreeOrImPremium}}
-            <a href="#" class="btn btn-raised btn-primary">Take it</a>
+            {{#if isFree}}
+              <a href="#" class="btn btn-raised btn-default">Take it</a>
+            {{else}}
+              <a href="#" class="btn btn-raised btn-primary">Claim it</a>
+            {{/if}}
           {{else}}
             <p class="list-group-item-text">{{info.username}}</p>
           {{/if}}
