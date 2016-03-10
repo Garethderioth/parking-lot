@@ -7,7 +7,7 @@ export default function () {
     const options = {
       fields: {_id: 1, name: 1, isFree: 1, userId: 1, info: 1},
       sort: {isFree: -1, name: -1},
-      limit: 10
+      limit: 100
     };
 
     return ParkingLots.find(selector, options);

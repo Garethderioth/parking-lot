@@ -19,20 +19,24 @@
             {{/if}}
           {{/if}}
         </h4>
-      {{#if isMe}}
-        <a href="#" class="btn btn-raised btn-danger">Leave it</a>
+      {{#if isCurrentUser}}
+        <a href="#" class="leave-it btn btn-raised btn-danger">Leave it</a>
       {{else}}
         {{#if info.isPremium}}
-          <p class="list-group-item-text">{{info.username}}</p>
+          <p class="list-group-item-text">{{info.fullname}}</p>
         {{else}}
-          {{#if isFreeOrImPremium}}
-            {{#if isFree}}
-              <a href="#" class="btn btn-raised btn-default">Take it</a>
+          {{#if currentUser}}
+            {{#if isFreeOrImPremium}}
+              {{#if isFree}}
+                <a href="#" class="take-it btn btn-raised btn-default">Take it</a>
+              {{else}}
+                <a href="#" class="claim-it btn btn-raised btn-primary">Claim it</a>
+              {{/if}}
             {{else}}
-              <a href="#" class="btn btn-raised btn-primary">Claim it</a>
+              <p class="list-group-item-text">{{info.fullname}}</p>
             {{/if}}
           {{else}}
-            <p class="list-group-item-text">{{info.username}}</p>
+            <p class="list-group-item-text">{{info.fullname}}</p>
           {{/if}}
         {{/if}}
       {{/if}}

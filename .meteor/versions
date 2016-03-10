@@ -87,7 +87,7 @@ twbs:bootstrap@3.3.6
 ui@1.0.8
 underscore@1.0.5-beta.12
 url@1.0.6-beta.12
+useraccounts:bootstrap@1.13.1
 useraccounts:core@1.13.1
-useraccounts:materialize@1.13.1
 webapp@1.2.5-beta.12
 webapp-hashing@1.0.6-beta.12

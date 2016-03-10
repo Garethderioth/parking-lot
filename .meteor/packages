@@ -19,10 +19,11 @@ kadira:flow-router
 kadira:blaze-layout
 twbs:bootstrap
 accounts-password
-useraccounts:materialize
 aldeed:tabular
 fezvrasta:bootstrap-material-design
 standard-minifier-js
 fourseven:scss
 juliancwirko:postcss@1.0.0-beta.11
 insecure
+useraccounts:bootstrap
+check
