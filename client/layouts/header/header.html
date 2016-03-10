@@ -7,11 +7,13 @@
             <span class="glyphicon glyphicon-random"></span>&nbsp;
             <strong>Parking Lot</strong>
           </a>
-          {{#if currentUser}}
-            <a id="signout" href="#" class="header__signin-button btn btn-success btn-raised navbar-btn pull-right">Sign out</a>
-          {{else}}
-            <a id="signin" href="#" class="header__signin-button btn btn-success btn-raised navbar-btn pull-right">Sign In</a>
-          {{/if}}
+          {{#unless isSigninRoute}}
+            {{#if currentUser}}
+              <a id="signout" href="#" class="header__signin-button btn btn-success btn-raised navbar-btn pull-right">Sign out</a>
+            {{else}}
+              <a id="signin" href="#" class="header__signin-button btn btn-success btn-raised navbar-btn pull-right">Sign In</a>
+            {{/if}}
+          {{/unless}}
         </div>
       </div>
     </nav>

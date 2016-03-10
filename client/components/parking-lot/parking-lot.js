@@ -18,15 +18,15 @@ Template.parkingLot.helpers({
 })
 
 Template.parkingLot.events({
-  'click .take-it': function (event) {
+  'click .take-it'(event) {
     event.preventDefault();
     Meteor.call('parkingLots.takeIt', this._id);
   },
-  'click .claim-it': function (event) {
+  'click .claim-it'(event) {
     event.preventDefault();
     Meteor.call('parkingLots.claimIt', this._id, this.userId);
   },
-  'click .leave-it':  function (event) {
+  'click .leave-it'(event) {
     event.preventDefault();
     Meteor.call('parkingLots.leaveIt', this._id);
   }

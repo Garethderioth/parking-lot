@@ -7,7 +7,8 @@ FlowRouter.route('/', {
 FlowRouter.route('/signin', {
   action() {
     BlazeLayout.render('mobileLayout', {content: 'signin'});
-  }
+  },
+  name: 'signin'
 });
 
 FlowRouter.route('/admin', {

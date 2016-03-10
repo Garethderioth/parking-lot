@@ -7,7 +7,7 @@ Template.parkingLots.onCreated(function onCreated() {
 });
 
 Template.parkingLots.helpers({
-  'parkingLots': () => {
+  'parkingLots'() {
     return ParkingLots.find();
   }
 })
