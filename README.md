@@ -1,5 +1,5 @@
 # Parking Lot
-App to rotate the parking lots with your coworkers.
+An hybrid mobile app to rotate the parking lots with your co-workers.
 
 ## Roadmap
 - Notify via email to the people in the app who has not a parking lot assigned.

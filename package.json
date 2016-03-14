@@ -1,0 +1,22 @@
+{
+  "name": "parking-lot",
+  "version": "1.0.0",
+  "description": "An hybrid mobile app to rotate the parking lots with your co-workers",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Garethderioth/parking-lot.git"
+  },
+  "author": "\"Guillermo Rodas <garethderioth@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Garethderioth/parking-lot/issues"
+  },
+  "homepage": "https://github.com/Garethderioth/parking-lot#readme",
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-plugin-meteor": "^3.0.2"
+  }
+}

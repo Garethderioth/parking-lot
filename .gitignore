@@ -1,0 +1,26 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# default meteor build and local packages
+.meteor/local
+
+# meteor settings file
+settings.json
+
+# meteor build output files
+*.tar.gz
+
+# general swp files from vim
+*.swp
