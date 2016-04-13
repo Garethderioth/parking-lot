@@ -22,3 +22,4 @@ An hybrid mobile app to rotate the parking lots with your co-workers.
 - Notify via email to the people in the app who has not a parking lot assigned.
 - Notify via email when somebody **claimed it** your parking lot.
 - Set a configurable time window for make changes on the admin dashboard.
+- Set rule for logging with custom/specific domains.
