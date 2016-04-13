@@ -1,4 +1,4 @@
 {
   "plugins": ["meteor"],
-  "extends": ["eslint:recommended", "plugin:meteor/recommended"]
+  "extends": ["airbnb/base", "plugin:meteor/recommended"]
 }
