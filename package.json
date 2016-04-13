@@ -1,6 +1,7 @@
 {
   "name": "parking-lot",
   "description": "An hybrid mobile app to rotate the parking lots with your co-workers",
+  "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "commit": "git-cz",

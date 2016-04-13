@@ -14,8 +14,8 @@ An hybrid mobile app to rotate the parking lots with your co-workers.
 - Refactor for use Mantra.
 - Refactor to use custom UI.
 - Refactor use Semantic UI on the admin dashboard.
-- Add tests.
-- Add Coverage.
+- Add tests with AVA.
+- Add coverage with nyc.
 - Add badges.
 
 ### Business features
