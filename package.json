@@ -3,9 +3,11 @@
   "description": "An hybrid mobile app to rotate the parking lots with your co-workers",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
+    "build": "echo \"Error: no build specified\"",
+    "check-coverage": "echo \"Error: no coverage specified\"",
     "commit": "git-cz",
-    "semantic-release": "semantic-release pre && semantic-release post"
+    "report-coverage": "echo \"Error: no report coverage specified\"",
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
@@ -27,12 +29,14 @@
     "eslint-config-airbnb": "6.1.0",
     "eslint-plugin-meteor": "^3.0.2",
     "eslint": "^2.4.0",
-    "ghooks": "1.1.1",
-    "semantic-release": "^4.3.5"
+    "ghooks": "1.1.1"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run test && npm run check-coverage"
     }
   },
   "ava": {
